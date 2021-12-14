@@ -1,12 +1,254 @@
 @charset "utf-8";
 @import url(../css/html5reset-1.6.1.css); /*reset css*/
 
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+/* global */
+
+h1, p {
+    line-height: 1.5em;
+}
+p {
+    color: #333;
+}
+
 .inner {
-  width: 100%;
-  margin: auto;
+  width: calc(100% - 90px);
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 80px 0;
 }
 .inner:after {
   content: "";
   clear: both;
   display: block;
+}
+
+.br_sp {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    .br_sp {
+        display: block;
+    }
+}
+
+.global_nav {
+    display: block;
+    position: absolute;
+    font-size: 1.5rem;
+}
+.global_nav ul {
+    display: block;
+    list-style: none;
+}
+.global_nav ul li {
+    display: inline-block;
+    font-size: 0.5em;
+    letter-spacing: 0.1em;
+}
+.global_nav ul li a {
+    text-decoration: none;
+    line-height: 1.5em;
+    color: #fff;
+    cursor: pointer;
+    /* ToDo: fix padding*/
+}
+.global_nav ul li a:hover {
+    color: #006934;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.global_nav ul li a span {
+    display: block;
+    width: 80%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+/* button */
+.shop_btn {
+    display: none;
+}
+.scroll {
+    display: none;
+}
+.page_top_btn {
+    display: none;
+}
+
+/* root */
+html {
+    font-size: 24px;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #DCEFA7;
+}
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 599px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* header */
+#header {
+    display: block;
+    width: 100%;
+    height: 200px;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    background: transparent;
+    position: fixed;
+    z-index: 1000;
+    color: #fff;
+}
+#header .inner {
+    position: relative;
+    padding: 0;
+}
+#header .tell {
+    display: block;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 800;
+    top: 35px;
+    right: 20px;
+}
+#header .tell p {
+    font-size: 1.0em;
+    color: #fff;
+}
+#header .tell p:nth-child(2) {
+    font-size: 0.5em;
+}
+#header .global_nav {
+    top: calc(189px - 2.0rem);
+    right: 40px;
+}
+
+#header .logo_pc {
+    display: block;
+    width: 180px;
+    height: 168.56px;
+    background-image: url("../img/svg/kobayasu_noen_logo.svg");
+    margin-top: 11px;
+    margin-left: 40px;
+}
+@media screen and (max-width: 1024px) {
+    #header .logo_pc {
+        display: none;
+    }
+}
+#header .logo_sp {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    #header .logo_sp {
+        display: block;
+    }
+}
+.toggle_btn {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    .toggle_btn {
+        display: block;
+    }
+}
+#header .global_nav .logo_nav {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    #header .global_nav .logo_nav {
+        display: block;
+    }
+}
+
+/* top */
+.top {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    background-image: url("../img/top.jpg");
+    background-size: cover;
+    position: relative;
+}
+.top .inner {
+    padding: 0;
+}
+.top::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.top h1 {
+    display: block;
+    width: calc(100% - 90px);
+    max-width: 980px;
+    color: #fff;
+    position: absolute;
+    bottom: 105px;
+    font-size: 1.0rem;
+    line-height: 1.5em;
+}
+
+/* concept */
+.concept {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+}
+.concept h1 {
+    color: #79431C;
+}
+.concept_contents {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 40px auto;
+    font-size: 1.5rem;
+}
+.concept p {
+    font-size: 0.5em;
+    margin-bottom: 1.0em;
+}
+.concept p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* footer */
+#footer .logo_pc {
+    display: block;
+}
+@media screen and (max-width: 1024px) {
+    #footer .logo_pc {
+        display: none;
+    }
+}
+#footer .logo_sp {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    #footer .logo_sp {
+        display: block;
+    }
+}
+#footer .global_nav {
+    display: block;
+}
+@media screen and (max-width: 1024px) {
+    #footer .global_nav {
+        display: none;
+    }
 }
