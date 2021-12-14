@@ -212,14 +212,35 @@ html {
     width: 100%;
     height: 50vh;
     text-align: center;
-    background-image: url("../img/top.jpg");
-    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.top_image {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
     position: relative;
+    top: 0;
+    left: 0;
+}
+#top_image {
+    mask-image: url(../img/svg/kobayasu_top.svg);
+    -webkit-mask-image: url(../img/svg/kobayasu_top.svg);
+    mask-mode: alpha;
+    -webkit-mask-mode: alpha;
 }
 .top .inner {
     padding: 0;
 }
-.top::after {
+.top_image::after {
     display: block;
     content: '';
     width: 100%;
