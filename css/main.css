@@ -5,12 +5,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 
 /* global */
-
-h1, p {
+h1, h2, p {
     line-height: 1.5em;
 }
 p {
     color: #333;
+}
+
+.section_title {
+    text-align: center;
+}
+.section_title span {
+    display: block;
+    width: 2.0rem;
+    height: 2px;
+    margin: 0 auto;
+    border-radius: 1px;
+}
+.section_title p {
+    font-size: 0.5rem;
+    margin-top: 0.3333em;
 }
 
 .inner {
@@ -225,6 +239,77 @@ html {
 }
 .concept p:last-of-type {
     margin-bottom: 0;
+}
+
+/* service */
+.service .section_title span {
+    background-color: #006934;
+}
+.service .inner {
+    width: calc(100% - 40px);
+}
+.service_contents {
+    display: flex;
+    width: calc(100% - 40px);
+    margin: 40px auto;
+}
+.service_content {
+    width: 33.33%;
+    padding-top: calc(33.33% - 13px);
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    background-size: cover;
+}
+.service_content div {
+    display: block;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 104px;
+    left: 0;
+}
+.service_content div h2 {
+    color: #fff;
+    margin-bottom: 2.375em;
+}
+.more_btn {
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+    padding: 12px 48px;
+    background-color: #533119;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 36px;
+}
+.service_content:nth-child(1) {
+    background-image: url("../img/service_1.png");
+    background-position: left;
+    margin-right: 20px;
+}
+.service_content:nth-child(2) {
+    background-image: url("../img/service_2.png");
+    background-position: -100px 0;
+}
+.service_content:nth-child(3) {
+    background-image: url("../img/service_3.png");
+    margin-left: 20px;
+    background-position: -100px 0;
+}
+
+
+/* access */
+.access .section_title span {
+    background-color: #EA651A;
+}
+
+/* information */
+.information .section_title span {
+    background-color: #B0E362;
 }
 
 /* footer */
