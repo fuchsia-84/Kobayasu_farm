@@ -97,6 +97,10 @@ dd {
     display: inline-block;
     font-size: 0.5em;
     letter-spacing: 0.1em;
+    margin-right: 0.5em;
+}
+.global_nav ul li:last-of-type {
+    margin-right: 0;
 }
 .global_nav ul li a {
     text-decoration: none;
