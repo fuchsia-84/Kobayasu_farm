@@ -9,6 +9,14 @@ h1, h2, p, dl, small {
     line-height: 1.5em;
     color: #333;
 }
+small {
+    display: block;
+    width: 100%;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.0em;
+    text-align: center;
+}
 dl {
     display: block;
     width: 100%;
@@ -395,9 +403,75 @@ html {
     background-color: #B0E362;
 }
 
+/* footer background image */
+.footer_bg {
+    display: block;
+    width: 100%;
+    height: 555px;
+    background-image: url(../img/vegetable_tile_3.png);
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+#footer_bg {
+    mask-image: url(../img/svg/kobayasu_footer.svg);
+    -webkit-mask-image: url(../img/svg/kobayasu_footer.svg);
+    mask-mode: alpha;
+    -webkit-mask-mode: alpha;
+}
 /* footer */
+#footer {
+    display: block;
+    width: 100%;
+    margin-top: -555px;
+}
+#footer .inner {
+    width: calc(100% - 40px);
+    position: relative;
+    padding: 230px 0 130px;
+}
+#footer small {
+    color: #fff;
+    margin: 0;
+}
 #footer .logo_pc {
     display: block;
+    width: 130px;
+    height: 36px;
+    background-image: url("../img/svg/kobayasu_noen_logo_text.svg");
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+#footer .global_nav {
+    right: 0;
+    top: 230px;
+}
+#footer .global_nav ul li {
+    vertical-align: top;
+}
+#footer dl {
+    width: 50%;
+    font-size: 1.5rem;
+    color: #fff;
+}
+#footer dt:first-of-type, #footer dd:first-of-type {
+    display: none;
+}
+#footer dt:nth-of-type(2){
+    display: none;
+}
+#footer dd:nth-of-type(2) {
+    padding-left: 0;
+}
+#footer dt {
+    width: 3.0em;
+    text-align: left;
+}
+#footer dd {
+    padding-left: 3.0em;
 }
 @media screen and (max-width: 1024px) {
     #footer .logo_pc {
