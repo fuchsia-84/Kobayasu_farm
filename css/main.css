@@ -545,6 +545,7 @@ html {
     position: absolute;
     bottom: 104px;
     left: 0;
+    z-index: 900;
 }
 .service_content div h2 {
     color: #fff;
@@ -677,6 +678,7 @@ html {
 #footer .global_nav {
     right: 0;
     top: 230px;
+    z-index: 1200;
 }
 #footer .global_nav ul li {
     vertical-align: top;
