@@ -131,7 +131,7 @@ dd {
     background-color: #FFDD64;
     border: 3px solid #79431C;
     font-size: 0.5rem;
-    margin: 150px 20px 0 auto;
+    margin: 150px 40px 0 auto;
     position: relative;
     cursor: pointer;
     z-index: 801;
@@ -158,19 +158,14 @@ dd {
     left: 55px;
     z-index: 802;
 }
-/*
-#shop_btn span {
-    display: block;
-    width: 30%;
-    max-width: 40px;
-    height: 30%;
-    background-image: url(../img/svg/basket.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-*/
 .scroll {
-    display: none;
+    display: block;
+    width: 40px;
+    height: 120px;
+    background-image: url(../img/svg/scroll_down_btn.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -40px;
 }
 .page_top_btn {
     display: none;
