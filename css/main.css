@@ -148,7 +148,6 @@ dd {
     z-index: 803;
     /*ToDo: fix text curve*/
 }
-
 #basket {
     display: block;
     fill: currentColor;
@@ -159,6 +158,26 @@ dd {
     left: 55px;
     z-index: 802;
 }
+.buttons.shop_fixed .shop_btn {
+    width: 50px;
+    height: 150px;
+    text-align: center;
+    margin: 150px -80px 0 auto;
+    border-radius: 20px;
+}
+.buttons.shop_fixed .shop_btn a {
+    width: 24px;
+    padding: 25px 13px 45px;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+.buttons.shop_fixed .shop_btn #basket {
+    width: 24px;
+    height: auto;
+    position: absolute;
+    bottom: 12px;
+    left: 13px;
+}
 .scroll {
     display: block;
     width: 40px;
@@ -168,17 +187,26 @@ dd {
     position: absolute;
     right: -40px;
 }
+.buttons.fixed .scroll {
+    display: none;
+}
 .page_top_btn_pc {
-    display: block;
+    display: none;
     width: 40px;
     height: 120px;
     position: absolute;
     right: -40px;
     top: calc(100vh - 160px);
+    color: #79431C;
+}
+.buttons.fixed .page_top_btn_pc {
+    display: block;
+}
+.buttons.on_footer .page_top_btn_pc {
     color: #fff;
 }
 .page_top_btn_pc svg {
-    color: currentColor;
+    fill: currentColor;
 }
 .page_top_btn_pc svg line {
     stroke: currentColor;
@@ -215,6 +243,10 @@ html {
     z-index: 1000;
     color: #fff;
 }
+#header.fixed {
+    height: 80px;
+    background-color: #006934;
+}
 #header .inner {
     position: relative;
     padding: 0;
@@ -234,9 +266,15 @@ html {
 #header .tell p:nth-child(2) {
     font-size: 0.5em;
 }
+#header.fixed .tell {
+    display: none;
+}
 #header .global_nav {
     top: calc(189px - 2.0rem);
     right: 40px;
+}
+#header.fixed .global_nav {
+    top: 10px;
 }
 
 #header .logo_pc {
@@ -246,6 +284,13 @@ html {
     background-image: url("../img/svg/kobayasu_noen_logo.svg");
     margin-top: 11px;
     margin-left: 40px;
+}
+#header.fixed .logo_pc {
+    background-image: url("../img/svg/kobayasu_noen_logo_text.svg");
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 36px;
+    margin-top: 22px;
 }
 @media screen and (max-width: 1024px) {
     #header .logo_pc {
