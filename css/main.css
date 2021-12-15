@@ -148,6 +148,101 @@ dd {
     z-index: 803;
     /*ToDo: fix text curve*/
 }
+.shop_btn a div {
+    display: block;
+}
+.shop_btn a div span {
+    display: inline-block;
+}
+/*text curve*/
+.shop_btn div:nth-of-type(1) #char_0 {
+    transform: rotate(-16deg);
+    transform: translateY(5px);
+}
+.shop_btn div:nth-of-type(1) #char_1 {
+    transform: rotate(-9deg);
+    transform: translateY(1px);
+}
+.shop_btn div:nth-of-type(1) #char_2 {
+    transform: rotate(-3deg);
+    transform: translateY(0px);
+}
+.shop_btn div:nth-of-type(1) #char_3 {
+    transform: rotate(3deg);
+    transform: translateY(0px);
+}
+.shop_btn div:nth-of-type(1) #char_4 {
+    transform: rotate(10deg);
+    transform: translateY(2px);
+}
+.shop_btn div:nth-of-type(1) #char_5 {
+    transform: rotate(10deg);
+    transform: translateY(5px);
+}
+.shop_btn div:nth-of-type(2) #char_0 {
+    transform: rotate(-13deg);
+    transform: translateY(3px);
+}
+.shop_btn div:nth-of-type(2) #char_1 {
+    transform: rotate(-6deg);
+    transform: translateY(1px);
+}
+.shop_btn div:nth-of-type(2) #char_2 {
+    transform: rotate(0deg);
+    transform: translateY(0px);
+}
+.shop_btn div:nth-of-type(2) #char_3 {
+    transform: rotate(6deg);
+    transform: translateY(1px);
+}
+.shop_btn div:nth-of-type(2) #char_4 {
+    transform: rotate(13deg);
+    transform: translateY(3px);
+}
+.buttons.shop_fixed .shop_btn div:nth-of-type(1) #char_0 {
+    transform: rotate(0);
+    transform: translateY(0);
+}
+.buttons.shop_fixed .shop_btn div:nth-of-type(1) #char_1 {
+    transform: rotate(0);
+    transform: translateY(0);
+}
+.buttons.shop_fixed .shop_btn div:nth-of-type(1) #char_2 {
+    transform: rotate(0);
+    transform: translateY(0);
+}
+.buttons.shop_fixed .shop_btn div:nth-of-type(1) #char_3 {
+    transform: rotate(0);
+    transform: translateY(0);
+}
+.buttons.shop_fixed .shop_btn div:nth-of-type(1) #char_4 {
+    transform: rotate(0);
+    transform: translateY(0);
+}
+.buttons.shop_fixed .shop_btn div:nth-of-type(1) #char_5 {
+    transform: rotate(0);
+    transform: translateY(0);
+}
+.buttons.shop_fixed .shop_btn div:nth-of-type(2) #char_0 {
+    transform: rotate(0);
+    transform: translateY(0);
+}
+.buttons.shop_fixed .shop_btn div:nth-of-type(2) #char_1 {
+    transform: rotate(0);
+    transform: translateY(0);
+}
+.buttons.shop_fixed .shop_btn div:nth-of-type(2) #char_2 {
+    transform: rotate(0);
+    transform: translateY(0);
+}
+.buttons.shop_fixed .shop_btn div:nth-of-type(2) #char_3 {
+    transform: rotate(0);
+    transform: translateY(0);
+}
+.buttons.shop_fixed .shop_btn div:nth-of-type(2) #char_4 {
+    transform: rotate(0);
+    transform: translateY(0);
+}
 #basket {
     display: block;
     fill: currentColor;
