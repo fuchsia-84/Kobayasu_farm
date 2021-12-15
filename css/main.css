@@ -131,8 +131,8 @@ dd {
 }
 .shop_btn {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 144px;
+    height: 144px;
     text-align: center;
     color: #79431C;
     background-color: #FFDD64;
@@ -148,7 +148,9 @@ dd {
     display: block;
     width: 150px;
     padding-top: 38px;
-    padding-bottom: 88px;
+    padding-bottom: 82px;
+    margin-top: -3px;
+    margin-left: -3px;
     color: #79431C;
     text-decoration: none;
     position: absolute;
@@ -157,6 +159,10 @@ dd {
 }
 .shop_btn a div {
     display: block;
+}
+.shop_btn a div:first-of-type {
+    margin-bottom: 0.5em;
+    white-space: nowrap;
 }
 .shop_btn a div span {
     display: inline-block;
@@ -257,21 +263,24 @@ dd {
     height: auto;
     position: absolute;
     bottom: 38px;
-    left: 55px;
+    left: 51px;
     z-index: 802;
 }
 .buttons.shop_fixed .shop_btn {
     width: 50px;
-    height: 150px;
+    height: 144px;
     text-align: center;
     margin: 150px -80px 0 auto;
     border-radius: 20px;
 }
 .buttons.shop_fixed .shop_btn a {
     width: 24px;
-    padding: 25px 13px 45px;
+    padding: 25px 16px 45px;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
+}
+.buttons.shop_fixed .shop_btn a div:first-of-type {
+    margin-bottom: 0;
 }
 .buttons.shop_fixed .shop_btn #basket {
     width: 24px;
