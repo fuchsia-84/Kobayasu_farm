@@ -148,6 +148,7 @@ dd {
     z-index: 803;
     /*ToDo: fix text curve*/
 }
+
 #basket {
     display: block;
     fill: currentColor;
@@ -167,8 +168,20 @@ dd {
     position: absolute;
     right: -40px;
 }
-.page_top_btn {
-    display: none;
+.page_top_btn_pc {
+    display: block;
+    width: 40px;
+    height: 120px;
+    position: absolute;
+    right: -40px;
+    top: calc(100vh - 160px);
+    color: #fff;
+}
+.page_top_btn_pc svg {
+    color: currentColor;
+}
+.page_top_btn_pc svg line {
+    stroke: currentColor;
 }
 
 /* root */
