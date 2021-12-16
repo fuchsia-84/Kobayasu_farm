@@ -133,6 +133,11 @@ dd {
     left: 0;
     z-index: 800;
 }
+@media screen and (max-width: 1024px) {
+    .buttons {
+        z-index: 950;
+    }
+}
 .buttons .inner {
     position: relative;
 }
@@ -172,6 +177,39 @@ dd {
 }
 .shop_btn_pc a div span {
     display: inline-block;
+}
+.shop_btn_sp {
+    display: none;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    color: #79431C;
+    background-color: #FFDD64;
+    border: 3px solid #79431C;
+    font-size: 0.5rem;
+    margin: 70vh -20px 0 auto;
+    position: relative;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.shop_btn_sp a {
+    display: block;
+    text-decoration: none;
+    color: #79431C;
+    position: absolute;
+    left: 6px;
+    bottom: 4px;
+    letter-spacing: 0.2em;
+}
+#basket_sp {
+    display: block;
+    fill: currentColor;
+    width: 28px;
+    height: auto;
+    position: absolute;
+    z-index: 802;
+    top: 5px;
+    left: 7px;
 }
 /*text curve*/
 .shop_btn_pc div:nth-of-type(1) #char_0 {
@@ -295,6 +333,19 @@ dd {
     bottom: 12px;
     left: 13px;
 }
+@media screen and (max-width: 1024px) {
+    .shop_btn_pc {
+        display: none;
+    }
+    .shop_btn_sp {
+        display: block;
+    }
+}
+@media screen and (max-width: 599px) {
+    .shop_btn_sp {
+        margin-top: 55vh;
+    }
+}
 .scroll {
     display: block;
     width: 40px;
@@ -303,6 +354,11 @@ dd {
     background-repeat: no-repeat;
     position: absolute;
     right: -40px;
+}
+@media screen and (max-width: 1024px) {
+    .scroll {
+        display: none;
+    }
 }
 .buttons.fixed .scroll {
     display: none;
@@ -327,6 +383,34 @@ dd {
 }
 .page_top_btn_pc svg line {
     stroke: currentColor;
+}
+.page_top_btn_sp {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    position: relative;
+    margin: 20px -20px 0 auto;
+}
+.page_top_btn_sp svg {
+    display: block;
+    width: 25px;
+    height: 22px;
+    position: absolute;
+    top: 14px;
+    left: 12.5px;
+}
+@media screen and (max-width: 1024px) {
+    .page_top_btn_pc {
+        display: none;
+    }
+    .buttons.fixed .page_top_btn_pc {
+        display: none;
+    }
+    .buttons.fixed .page_top_btn_sp {
+        display: block;
+    }
 }
 
 /* root */
