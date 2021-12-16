@@ -791,6 +791,9 @@ html {
 }
 
 /* information */
+.information .section_title span {
+    background-color: #B0E362;
+}
 .info_contents {
     display: block;
     width: calc(100% - 80px);
@@ -828,11 +831,26 @@ html {
 .info_detail dl {
     color: #444;
 }
-/* information */
-.information .section_title span {
-    background-color: #B0E362;
+@media screen and (max-width: 768px) {
+    .info_contents img {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    }
+    .info_detail {
+        float: none;
+        width: 100%;
+        margin: 20px auto 0;
+    }
+    .info_detail dt, .info_detail dd {
+        font-size: 1.0rem;
+    }
 }
-
+@media screen and (max-width: 599px) {
+    .information .inner {
+        width: 100%;
+    }
+}
 /* footer background image */
 .footer_bg {
     display: block;
