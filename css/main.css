@@ -514,6 +514,11 @@ html {
 }
 #header .global_nav .logo_nav {
     display: none;
+    width: 100px;
+    height: 80px;
+    background-image: url("../img/svg/kobayasu_noen_logo.svg");
+    background-repeat: no-repeat;
+    margin: 20px auto 0;
 }
 @media screen and (max-width: 1024px) {
     #header .logo_pc {
@@ -568,7 +573,7 @@ html {
         display: block;
         width: 80%;
         padding-top: calc(50vh - 255px);
-        padding-bottom: calc(50vh - 195px);
+        padding-bottom: calc(50vh - 295px);
         margin: 100px auto;
         background-color: #fff;
         border-radius: 50px;
@@ -637,6 +642,9 @@ html {
     
     #header .global_nav .logo_nav {
         display: block;
+    }
+    #header.fixed .global_nav {
+        top: calc(60px - 1.0rem);
     }
 }
 
