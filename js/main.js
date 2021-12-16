@@ -4,6 +4,7 @@ $(function() {
     $buttons = $('.buttons');
     $shop_btn_text = $('.shop_btn a div');
     $header_global_nav = $('#header .global_nav');
+
     var header_height = $header.outerHeight();
     var window_height = $(window).height();
     var switch_adjust = 400;
@@ -62,10 +63,10 @@ $(function() {
         }
     });
 
-    /* toggle button clicked, show global navigation
+    /* toggle button clicked, show global navigation */
     $toggle_btn.click(function() {
-        $global_nav.slideToggle();
-        $toggle_btn.toggleClass('show');
+        $header_global_nav.slideToggle();
+        $toggle_btn.toggleClass('open');
     });
-    */
+
 });

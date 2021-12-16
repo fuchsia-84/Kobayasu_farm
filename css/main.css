@@ -114,12 +114,7 @@ dd {
     background-color: rgba(255, 255, 255, 0.25);
 }
 .global_nav ul li a span {
-    display: block;
-    width: 80%;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 2px;
-    margin: 0 auto;
+    display: none;
 }
 /* buttons */
 .buttons {
@@ -159,7 +154,6 @@ dd {
     text-decoration: none;
     position: absolute;
     z-index: 803;
-    /*ToDo: fix text curve*/
 }
 .shop_btn a div {
     display: block;
@@ -391,6 +385,14 @@ html {
 #header.fixed .global_nav {
     top: 10px;
 }
+#header .global_nav ul li:first-of-type a span {
+    display: block;
+    width: 80%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin: 0 auto;
+}
 
 #header .logo_pc {
     display: block;
@@ -407,35 +409,145 @@ html {
     height: 36px;
     margin-top: 22px;
 }
-@media screen and (max-width: 1024px) {
-    #header .logo_pc {
-        display: none;
-    }
-}
 #header .logo_sp {
     display: none;
-}
-@media screen and (max-width: 1024px) {
-    #header .logo_sp {
-        display: block;
-    }
+    width: 130px;
+    height: 36px;
+    background-image: url("../img/svg/kobayasu_noen_logo_text.svg");
+    background-repeat: no-repeat;
+    margin-top: 22px;
 }
 .toggle_btn {
-    display: none;
-}
-@media screen and (max-width: 1024px) {
-    .toggle_btn {
-        display: block;
-    }
+    visibility: hidden;
 }
 #header .global_nav .logo_nav {
     display: none;
 }
 @media screen and (max-width: 1024px) {
+    #header .logo_pc {
+        display: none;
+    }
+    #header .logo_sp {
+        display: block;
+    }
+    #header {
+        height: 150px;
+    }
+    #header .tell {
+        top: 0;
+    }
+    #header .global_nav {
+        top: calc(128px - 2.0rem);
+    }
+    #header.fixed {
+        height: 60px;
+        background-color: #4A7550;
+    }
+    #header.fixed .logo_sp {
+        margin-top: 12px;
+    }
+    #header.fixed .global_nav {
+        top: calc(48px - 2.0rem);
+    }
+}
+@media screen and (max-width: 599px) {
+    #header {
+        height: 60px;
+    }
+    #header.fixed {
+        height: 60px;
+    }
+    #header .logo_sp {
+        margin-top: 12px;
+    }
+    #header .tell {
+        display: none;
+    }
+    #header .global_nav {
+        display: none;
+        top: 48px;
+        left: -45px;
+        right: 0;
+        width: calc(100% + 90px);
+        height: 100vh;
+        background-color: #ACD273;
+    }
+    #header .global_nav ul {
+        display: block;
+        width: 80%;
+        padding-top: calc(50vh - 255px);
+        padding-bottom: calc(50vh - 195px);
+        margin: 100px auto;
+        background-color: #fff;
+        border-radius: 50px;
+    }
+    #header .global_nav li {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+    #header .global_nav li a {
+        color: #006934;
+    }
+    #header .global_nav ul li a span {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        background-color: #ACD273;
+        height: 1px;
+        border-radius: 0.5px;
+    }
+    #header .global_nav ul li:first-of-type a span {
+        width: 60%;
+        background-color: #ACD273;
+        height: 1px;
+        border-radius: 0.5px;
+    }
+    .toggle_btn {
+        visibility: visible;
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        opacity: 1.0;
+    }
+    .toggle_btn span {
+        visibility: visible;
+        width: 60%;
+        height: 2px;
+        border-radius: 1px;
+        background-color: #fff;
+        position: absolute;
+        transition: 0.4s all ease-in;
+    }
+    .toggle_btn span:nth-child(1) {
+        top: 10px;
+    }
+    .toggle_btn span:nth-child(2) {
+        top: 19px;
+    }
+    .toggle_btn span:nth-child(3) {
+        top: 28px;
+    }
+    .toggle_btn.open span:nth-child(1) {
+        top: 19px;
+        transform: rotate(135deg);
+    }
+    .toggle_btn.open span:nth-child(2) {
+        width: 0;
+        opacity: 0.0;
+    }
+    .toggle_btn.open span:nth-child(3) {
+        top: 19px;
+        transform: rotate(-135deg);
+    }
+    
     #header .global_nav .logo_nav {
         display: block;
     }
 }
+
 
 /* top */
 .top {
