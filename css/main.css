@@ -781,6 +781,14 @@ html {
     height: 300px;
     margin: 40px auto 0;
 }
+@media screen and (max-width: 768px) {
+    .access .inner {
+        width: 100%;
+    }
+    .access .map {
+        width: 100%;
+    }
+}
 
 /* information */
 .info_contents {
