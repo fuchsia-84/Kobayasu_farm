@@ -136,7 +136,7 @@ dd {
 .buttons .inner {
     position: relative;
 }
-.shop_btn {
+.shop_btn_pc {
     display: block;
     width: 144px;
     height: 144px;
@@ -151,7 +151,7 @@ dd {
     z-index: 801;
     border-radius: 75px;
 }
-.shop_btn a {
+.shop_btn_pc a {
     display: block;
     width: 150px;
     padding-top: 38px;
@@ -163,102 +163,102 @@ dd {
     position: absolute;
     z-index: 803;
 }
-.shop_btn a div {
+.shop_btn_pc a div {
     display: block;
 }
-.shop_btn a div:first-of-type {
+.shop_btn_pc a div:first-of-type {
     margin-bottom: 0.5em;
     white-space: nowrap;
 }
-.shop_btn a div span {
+.shop_btn_pc a div span {
     display: inline-block;
 }
 /*text curve*/
-.shop_btn div:nth-of-type(1) #char_0 {
+.shop_btn_pc div:nth-of-type(1) #char_0 {
     transform: rotate(-16deg);
     transform: translateY(5px);
 }
-.shop_btn div:nth-of-type(1) #char_1 {
+.shop_btn_pc div:nth-of-type(1) #char_1 {
     transform: rotate(-9deg);
     transform: translateY(1px);
 }
-.shop_btn div:nth-of-type(1) #char_2 {
+.shop_btn_pc div:nth-of-type(1) #char_2 {
     transform: rotate(-3deg);
     transform: translateY(0px);
 }
-.shop_btn div:nth-of-type(1) #char_3 {
+.shop_btn_pc div:nth-of-type(1) #char_3 {
     transform: rotate(3deg);
     transform: translateY(0px);
 }
-.shop_btn div:nth-of-type(1) #char_4 {
+.shop_btn_pc div:nth-of-type(1) #char_4 {
     transform: rotate(10deg);
     transform: translateY(2px);
 }
-.shop_btn div:nth-of-type(1) #char_5 {
+.shop_btn_pc div:nth-of-type(1) #char_5 {
     transform: rotate(10deg);
     transform: translateY(5px);
 }
-.shop_btn div:nth-of-type(2) #char_0 {
+.shop_btn_pc div:nth-of-type(2) #char_0 {
     transform: rotate(-13deg);
     transform: translateY(3px);
 }
-.shop_btn div:nth-of-type(2) #char_1 {
+.shop_btn_pc div:nth-of-type(2) #char_1 {
     transform: rotate(-6deg);
     transform: translateY(1px);
 }
-.shop_btn div:nth-of-type(2) #char_2 {
+.shop_btn_pc div:nth-of-type(2) #char_2 {
     transform: rotate(0deg);
     transform: translateY(0px);
 }
-.shop_btn div:nth-of-type(2) #char_3 {
+.shop_btn_pc div:nth-of-type(2) #char_3 {
     transform: rotate(6deg);
     transform: translateY(1px);
 }
-.shop_btn div:nth-of-type(2) #char_4 {
+.shop_btn_pc div:nth-of-type(2) #char_4 {
     transform: rotate(13deg);
     transform: translateY(3px);
 }
-.buttons.shop_fixed .shop_btn div:nth-of-type(1) #char_0 {
+.buttons.shop_fixed .shop_btn_pc div:nth-of-type(1) #char_0 {
     transform: rotate(0);
     transform: translateY(0);
 }
-.buttons.shop_fixed .shop_btn div:nth-of-type(1) #char_1 {
+.buttons.shop_fixed .shop_btn_pc div:nth-of-type(1) #char_1 {
     transform: rotate(0);
     transform: translateY(0);
 }
-.buttons.shop_fixed .shop_btn div:nth-of-type(1) #char_2 {
+.buttons.shop_fixed .shop_btn_pc div:nth-of-type(1) #char_2 {
     transform: rotate(0);
     transform: translateY(0);
 }
-.buttons.shop_fixed .shop_btn div:nth-of-type(1) #char_3 {
+.buttons.shop_fixed .shop_btn_pc div:nth-of-type(1) #char_3 {
     transform: rotate(0);
     transform: translateY(0);
 }
-.buttons.shop_fixed .shop_btn div:nth-of-type(1) #char_4 {
+.buttons.shop_fixed .shop_btn_pc div:nth-of-type(1) #char_4 {
     transform: rotate(0);
     transform: translateY(0);
 }
-.buttons.shop_fixed .shop_btn div:nth-of-type(1) #char_5 {
+.buttons.shop_fixed .shop_btn_pc div:nth-of-type(1) #char_5 {
     transform: rotate(0);
     transform: translateY(0);
 }
-.buttons.shop_fixed .shop_btn div:nth-of-type(2) #char_0 {
+.buttons.shop_fixed .shop_btn_pc div:nth-of-type(2) #char_0 {
     transform: rotate(0);
     transform: translateY(0);
 }
-.buttons.shop_fixed .shop_btn div:nth-of-type(2) #char_1 {
+.buttons.shop_fixed .shop_btn_pc div:nth-of-type(2) #char_1 {
     transform: rotate(0);
     transform: translateY(0);
 }
-.buttons.shop_fixed .shop_btn div:nth-of-type(2) #char_2 {
+.buttons.shop_fixed .shop_btn_pc div:nth-of-type(2) #char_2 {
     transform: rotate(0);
     transform: translateY(0);
 }
-.buttons.shop_fixed .shop_btn div:nth-of-type(2) #char_3 {
+.buttons.shop_fixed .shop_btn_pc div:nth-of-type(2) #char_3 {
     transform: rotate(0);
     transform: translateY(0);
 }
-.buttons.shop_fixed .shop_btn div:nth-of-type(2) #char_4 {
+.buttons.shop_fixed .shop_btn_pc div:nth-of-type(2) #char_4 {
     transform: rotate(0);
     transform: translateY(0);
 }
@@ -272,23 +272,23 @@ dd {
     left: 51px;
     z-index: 802;
 }
-.buttons.shop_fixed .shop_btn {
+.buttons.shop_fixed .shop_btn_pc {
     width: 50px;
     height: 144px;
     text-align: center;
     margin: 150px -80px 0 auto;
     border-radius: 20px;
 }
-.buttons.shop_fixed .shop_btn a {
+.buttons.shop_fixed .shop_btn_pc a {
     width: 24px;
     padding: 25px 16px 45px;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
 }
-.buttons.shop_fixed .shop_btn a div:first-of-type {
+.buttons.shop_fixed .shop_btn_pc a div:first-of-type {
     margin-bottom: 0;
 }
-.buttons.shop_fixed .shop_btn #basket {
+.buttons.shop_fixed .shop_btn_pc #basket {
     width: 24px;
     height: auto;
     position: absolute;

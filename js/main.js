@@ -2,7 +2,7 @@ $(function() {
     $toggle_btn = $('.toggle_btn');
     $header = $('#header');
     $buttons = $('.buttons');
-    $shop_btn_text = $('.shop_btn a div');
+    $shop_btn_pc_text = $('.shop_btn_pc a div');
     $header_global_nav = $('#header .global_nav');
 
     var header_height = $header.outerHeight();
@@ -25,7 +25,7 @@ $(function() {
             this.innerHTML = html;
         });
     };
-    $shop_btn_text.letter_span();
+    $shop_btn_pc_text.letter_span();
 
     /* scroll over header height, change header style */
     $(window).on('scroll', function() {
