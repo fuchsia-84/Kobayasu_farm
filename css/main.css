@@ -870,6 +870,17 @@ html {
     mask-mode: alpha;
     -webkit-mask-mode: alpha;
 }
+@media screen and (max-width: 768px) {
+    .footer_bg {
+        height: 240px;
+    }
+    #footer_bg {
+        mask-image: none;
+        -webkit-mask-image: none;
+        mask-mode: alpha;
+        -webkit-mask-mode: alpha;
+    }
+}
 /* footer */
 #footer {
     display: block;
@@ -893,6 +904,14 @@ html {
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
+#footer .logo_sp {
+    display: none;
+    width: 150px;
+    height: 120px;
+    background-image: url("../img/svg/kobayasu_noen_logo.svg");
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
 #footer .global_nav {
     right: 0;
     top: 230px;
@@ -900,6 +919,14 @@ html {
 }
 #footer .global_nav ul li {
     vertical-align: top;
+}
+#footer .global_nav ul li:first-of-type a span {
+    display: block;
+    width: 80%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin: 0 auto;
 }
 #footer dl {
     width: 50%;
@@ -926,20 +953,30 @@ html {
     #footer .logo_pc {
         display: none;
     }
-}
-#footer .logo_sp {
-    display: none;
-}
-@media screen and (max-width: 1024px) {
     #footer .logo_sp {
         display: block;
+        width: 240px;
+        height: 192px;
     }
-}
-#footer .global_nav {
-    display: block;
-}
-@media screen and (max-width: 1024px) {
     #footer .global_nav {
         display: none;
+    }
+    #footer dl {
+        margin: -152px 0 24px auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    #footer {
+        margin-top: -240px;
+    }
+    #footer .inner {
+        padding: 40px 0 0;
+    }
+    #footer .logo_sp {
+        width: 150px;
+        height: 120px;
+    }
+    #footer dl {
+        margin: -80px 0 24px auto;
     }
 }
