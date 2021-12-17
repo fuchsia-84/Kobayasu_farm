@@ -155,6 +155,10 @@ dd {
     cursor: pointer;
     z-index: 801;
     border-radius: 75px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.shop_btn_pc:hover {
+    background-color: #79431C;
 }
 .shop_btn_pc a {
     display: block;
@@ -167,6 +171,9 @@ dd {
     text-decoration: none;
     position: absolute;
     z-index: 803;
+}
+.shop_btn_pc a:hover {
+    color: #fff;
 }
 .shop_btn_pc a div {
     display: block;
@@ -191,6 +198,7 @@ dd {
     position: relative;
     cursor: pointer;
     border-radius: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .shop_btn_sp a {
     display: block;
@@ -310,6 +318,9 @@ dd {
     left: 51px;
     z-index: 802;
 }
+.shop_btn_pc:hover #basket {
+    fill: #fff;
+}
 .buttons.shop_fixed .shop_btn_pc {
     width: 50px;
     height: 144px;
@@ -384,11 +395,17 @@ dd {
 .buttons.on_footer .page_top_btn_pc {
     color: #fff;
 }
+.buttons.on_footer .page_top_btn_pc:hover {
+    color: #000;
+}
 .page_top_btn_pc svg {
     fill: currentColor;
 }
 .page_top_btn_pc svg line {
     stroke: currentColor;
+}
+.page_top_btn_pc:hover {
+    color: #006934;
 }
 .page_top_btn_sp {
     display: none;
