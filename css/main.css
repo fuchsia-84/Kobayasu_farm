@@ -333,6 +333,12 @@ dd {
     bottom: 12px;
     left: 13px;
 }
+@media screen and (max-width: 1074px) {
+    .buttons.shop_fixed .shop_btn_pc {
+        margin: 150px 0 0 auto;
+        border-radius: 20px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .shop_btn_pc {
         display: none;
