@@ -1,4 +1,4 @@
-このリポジトリは、<u>Webサイト[こばやす農園](https://fuchsia-84.github.io/Kobayaysu_farm/) のソースコード</u>です。
+このリポジトリは、<u>Webサイト[こばやす農園](https://fuchsia-84.github.io/Kobayasu_farm/) のソースコード</u>です。
 
 <span style="color: red;">※仮想、架空のWebサイト</span>
 
